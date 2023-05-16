@@ -1,34 +1,47 @@
+
+import java.util.Scanner;
+
 public class aluno {
     public String nome, sexo, endereco, cidade,
             estado, nomeDoPai,nomeDaMae ;
     public int cep, rg, grauDeEscolaridade, telefone, dataDeNascimento;
     
     public static void main(String[] args) {
+                
+        Scanner scanner = new Scanner(System.in);
         aluno aluno1 = new aluno();
-        aluno1.nome = "André Martins";
-        aluno1.sexo = "Masculino";
-        aluno1.endereco = "Rua Santo Antonio, 29 - Centro";
-        aluno1.cidade = "São Paulo";
-        aluno1.estado = "SP";
-        aluno1.nomeDoPai = "João Martins";
-        aluno1.nomeDaMae = "Maria Martins";
-        aluno1.telefone = 2344565;
-        aluno1.cep = 102456827;
-        aluno1.rg = 345644334;
-        aluno1.dataDeNascimento = 71281;
-        aluno1.grauDeEscolaridade = 2;
+        System.out.println("Entre com o nome:");
+        aluno1.nome = scanner.next();
+        System.out.println("Entre com o sexo:");
+        aluno1.sexo = scanner.next();
+        System.out.println("Entre com o endereço:");
+        aluno1.endereco = scanner.next();
+        System.out.println("Entre com a cidade onde o aluno reside:");
+        aluno1.cidade = scanner.next();
+        System.out.println("Entre com a sigla do estado onde o aluno reside:");
+        aluno1.estado = scanner.next();
+        System.out.println("Entre com o CEP (somente números):");
+        aluno1.cep = scanner.nextInt();
+        System.out.println("Entre com o telefone (somente números):");
+        aluno1.telefone = scanner.nextInt();
+        System.out.println("Entre com o nome do pai do aluno:");
+        aluno1.nomeDoPai = scanner.next();
+        System.out.println("Entre com o nome da mãe do aluno:");
+        aluno1.nomeDaMae = scanner.next();
+        System.out.println("Entre com o Registro Geral (RG) do aluno (somente números)");
+        aluno1.rg = scanner.nextInt();
+        System.out.println("Entre com o grau de escolaridade do aluno (0, 1, 2, 3):");
+        aluno1.grauDeEscolaridade = scanner.nextInt();
         
-        System.out.println("Nome do aluno: "+ aluno1.nome);
-        System.out.println("Sexo do aluno: "+ aluno1.sexo);
-        System.out.println("endereço do aluno: "+ aluno1.endereco);
-        System.out.println("cidade do aluno: "+ aluno1.cidade);
-        System.out.println("estado do aluno: "+ aluno1.estado);
-        System.out.println("Nome do pai do aluno: "+ aluno1.nomeDoPai);
-        System.out.println("Nome da mãe do aluno: "+ aluno1.nomeDaMae);
-        System.out.println("Telefone do aluno: "+ aluno1.telefone);
-        System.out.println("CEP do aluno: "+ aluno1.cep);
-        System.out.println("RG do aluno: "+ aluno1.rg);
-        System.out.println("Data de Nascimento do aluno: "+ aluno1.dataDeNascimento);
-        System.out.println("Grau de escolaridade do aluno: "+ aluno1.grauDeEscolaridade);
+        System.out.println("Aluno: "+ aluno1.nome);
+        System.out.println("Sexo: "+ aluno1.sexo);
+        System.out.println("Registro Geral (RG): "+ aluno1.rg);
+        System.out.println("Grau de escolaridade: "+ aluno1.grauDeEscolaridade);
+        System.out.println("Endereço: "+ aluno1.endereco + ", Cidade:" + aluno1.cidade +
+                ", Estado: " + aluno1.estado);
+        System.out.println("CEP: "+ aluno1.cep);
+        System.out.println("Telefone: "+ aluno1.telefone);
+        System.out.println("Nome do pai:" + aluno1.nomeDoPai);
+        System.out.println("Nome da mãe: "+ aluno1.nomeDaMae);
     }
 }
