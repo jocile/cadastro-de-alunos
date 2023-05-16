@@ -2,12 +2,6 @@
 
 Aplicativo de cadastro de alunos como exercício nas aulas de desenvolvimento de sistemas do Senac
 
-- [Fase1](fase1/README.md)
-- [Fase2](fase2/README.md)
-- [Fase3](fase3/README.md)
-- [Fase4](fase4/README.md)
-- [Fase5](fase5/README.md)
-
 ## Fase 1 Cap. 2
 
 Iniciando a proposta, que é construir um sistema de informação, declare as variáveis para o algoritmo de cadastramento de alunos, cujos dados são:
@@ -27,8 +21,8 @@ Iniciando a proposta, que é construir um sistema de informação, declare as va
 
 Classifique os dados segundo os tipos das variáveis (numéricos, literais ou lógicos) que irão armazená-los.
 
-- Variáveis literais:	nome do aluno, sexo, endereço, cidade, estado,	nome do pai, nome da mãe.
-- Variáveis numéricas:	telefone, CEP, RG, data de nascimento, grau de 	escolaridade....
+- Variáveis literais: nome do aluno, sexo, endereço, cidade, estado,	nome do pai, nome da mãe.
+- Variáveis numéricas: telefone, CEP, RG, data de nascimento, grau de 	escolaridade....
 
 ## Diagrama de classe
 
@@ -50,6 +44,17 @@ classDiagram
     }
 ```
 
+Implementação em java:
+
+```java
+public class aluno {
+    public String nome, sexo, endereco, cidade,
+            estado, nomeDoPai,nomeDaMae ;
+    public int cep, rg, grauDeEscolaridade, telefone, dataDeNascimento;    
+    
+}
+```
+
 ## Referência
 
 Xavier, Gley Fabiano Cardoso
@@ -58,3 +63,5 @@ E-book. Disponível em: https://bibliotecadigitalsenac.com.br/?from=%3FcontentIn
 Acesso em 15/05/2023
 
 [Editor de diagramas Mermaid](https://mermaid.live/)
+
+[README principal](../README.md)
